@@ -7,7 +7,7 @@ setup(
     description='Copy Windows 10 Lock Screen Wallpaper',
     long_description=open(os.path.join(os.path.dirname(__file__), 'README.md')).read(),
     long_description_content_type='text/markdown',
-    version='1.1.0',
+    version='1.1.1',
     packages=find_packages(),
     platforms='windows',
     url='https://github.com/seehait/copy-windows-10-lock-screen-wallpaper',
