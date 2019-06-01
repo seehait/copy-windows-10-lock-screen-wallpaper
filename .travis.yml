@@ -1,0 +1,11 @@
+language: python
+python: 3.6
+script: python setup.py test
+deploy:
+  provider: pypi
+  user: seehait
+  password:
+    secure: tRj2ht1yrOIcT2ewVdXp6ZmdkvtqLa+jan5Cxx5dmWI0tPjt/pazJmmXJz+XsWm8quc9gmYOJhgZ6dBv1l+ILQ1ftXVRs9CiM4Ikb46JXAhujXtNnsmBVEHalSsU1cUc3yDUj/4Uc5t2dTzdHkv89LLGNB2MNmMxh5vQvM5GiQf18v3OvWFS26mXjm0oF8JHGB9Rahfq/8ezDaSe4LLzM93xFqykqBL1AB5daZ1/dRhNYQKhHAnztDCyH6B4ISltZVbyXN0r71zwyh/s1nxeV80dsL1sMng3GIJAVcrwtZp9MjzxOnW35bhOhVaut5nrmAGtpzt1LwIaMC+wSsKWEknkrraS7HuaM6mZGYQGiykdkepneWoOIB7DgvvGRI/iDQ6WMoy8RZl7KApwlAw71yyNyT6WQtAVMkWrNsjtKId71KVw2eKf8UCobKp8hhBXHiMA2s31c0nffQOPdl8kKB1kOnXARADDXWbvGzFrzkCEFdBEemVPiI/7XpJbRyn+H3lKzZKcHDVsLNj1GVIV+nKEHlsYlSVOgjOC1JwKAEAt7yurdjJYZ4oBdXi+RR9/5kgULngJpN12mnuEPHLEPGTiSAdGyYAAPw/d8RsZ5P2nqGWJ4Sub+V82pt98q8+1TmxjFoIQEoI7g/GKDpjTbMllRTYdNZa/d0PO9kFNswQ=
+  on:
+    tags: true
+  distributions: sdist bdist_wheel
