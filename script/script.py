@@ -30,11 +30,13 @@ def get_lock_screen_wallpaper_path():
         size = path.getsize(f_path)
 
         if size >= max_size:
-            if size >= nearly_max_size:
-                nearly_max_size = max_size
-                wallpaper_2_path = wallpaper_1_path
+            nearly_max_size = max_size
+            wallpaper_2_path = wallpaper_1_path
             max_size = size
             wallpaper_1_path = f_path
+        elif size >= nearly_max_size:
+            nearly_max_size = size
+            wallpaper_2_path = f_path
 
     return (wallpaper_1_path, wallpaper_2_path)
 
