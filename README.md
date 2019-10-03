@@ -8,14 +8,15 @@ Copy Windows 10 current lock screen wallpaper to destination directory.
 
 ## Table of Contents
 
-* [Requirement](#requirement)
-* [Installation](#installation)
-  * [Installing from PyPI](#installing-from-pypi)
-  * [Installing from Git](#installing-from-git)
-* [Usage](#usage)
-* [License](#license)
+- [Requirement](#requirement)
+- [Installation](#installation)
+  - [Installing from PyPI](#installing-from-pypi)
+  - [Installing from Git](#installing-from-git)
+- [Usage](#usage)
+- [License](#license)
 
 ## Requirement
+
 - Microsoft Windows 10
 - Python 3.6+
 
@@ -33,11 +34,13 @@ pip3 install copy-windows-10-lock-screen-wallpaper
 2. Run `python3 setup.py install`.
 
 ## Usage
+
 ```sh
 copy-lock-screen-wallpaper [--destination {destination_directory}]
 ```
 
 ### Example
+
 ```sh
 copy-lock-screen-wallpaper
 ```
@@ -47,6 +50,7 @@ copy-lock-screen-wallpaper --destination C:\
 ```
 
 ## License
+
 (C) 2019 Seehait Chockthanyawat.
 
 *Copy Windows 10 Lock Screen Wallpaper* is licensed under [MIT License](LICENSE)
