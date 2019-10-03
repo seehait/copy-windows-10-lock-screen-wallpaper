@@ -4,17 +4,21 @@ from pathlib import Path
 from shutil import copyfile
 import sys
 
+default_target_path = ['Pictures', 'Wallpaper']
+
 def home_directory():
     return Path.home()
 
 def read_args(argv):
     parser = argparse.ArgumentParser(description='Copy lock screen wallpaper to destination directory.')
-    parser.add_argument('--destination', '-d', dest='dest_directory', metavar='Destination directory', type=str, default=str(path.join(home_directory(), 'Pictures', 'Wallpaper')), help='the desination, default is $HOME/Pictures/Wallpaper')
+    parser.add_argument('--destination', '-d', dest='dest_directory', metavar='Destination directory', type=str, default=str(path.join(home_directory(), *default_target_path)), help='the desination, default is $HOME/Pictures/Wallpaper')
     
     return parser.parse_args(argv).dest_directory
 
 def get_lock_screen_asset_path():
-    return path.join(home_directory(), 'AppData', 'Local', 'Packages', 'Microsoft.Windows.ContentDeliveryManager_cw5n1h2txyewy', 'LocalState', 'Assets')
+    windows_lock_screen_asset_path = ['AppData', 'Local', 'Packages', 'Microsoft.Windows.ContentDeliveryManager_cw5n1h2txyewy', 'LocalState', 'Assets']
+
+    return path.join(home_directory(), *windows_lock_screen_asset_path)
 
 def get_lock_screen_wallpaper_path():
     lock_screen_asset_path = get_lock_screen_asset_path()
