@@ -37,6 +37,15 @@ pip3 install copy-windows-10-lock-screen-wallpaper
 copy-lock-screen-wallpaper [--destination {destination_directory}]
 ```
 
+### Example
+```sh
+copy-lock-screen-wallpaper
+```
+
+```sh
+copy-lock-screen-wallpaper --destination C:\
+```
+
 ## License
 (C) 2019 Seehait Chockthanyawat.
 
