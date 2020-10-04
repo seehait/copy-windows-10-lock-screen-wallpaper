@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [1.1.3] - 2020-10-04
 ## [1.1.2] - 2019-10-03
 
 ### Changed
@@ -30,7 +31,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 - Initial open source release
 
-[unreleased]: https://github.com/seehait/copy-windows-10-lock-screen-wallpaper/compare/1.1.2...HEAD
+[unreleased]: https://github.com/seehait/copy-windows-10-lock-screen-wallpaper/compare/1.1.3...HEAD
+[1.1.3]: https://github.com/seehait/copy-windows-10-lock-screen-wallpaper/compare/1.1.2...1.1.3
 [1.1.2]: https://github.com/seehait/copy-windows-10-lock-screen-wallpaper/compare/1.1.1...1.1.2
 [1.1.1]: https://github.com/seehait/copy-windows-10-lock-screen-wallpaper/compare/1.1.0...1.1.1
 [1.1.0]: https://github.com/seehait/copy-windows-10-lock-screen-wallpaper/compare/bb05af7da13d8f8468da5f22097d989ab0a8cd3f...1.1.0
